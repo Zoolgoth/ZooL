@@ -1,0 +1,9 @@
+//1. napisz petle, ktora wypisze na ekran wszystkie liczby parzyste od 2 do 1024
+public class testttttttttttttttttt {
+​
+    public static void main(String[] args) {
+        System.out.println(2);
+        for (int i=2; i<=512; i++){
+            System.out.println( i*2);
+        }
+    }
