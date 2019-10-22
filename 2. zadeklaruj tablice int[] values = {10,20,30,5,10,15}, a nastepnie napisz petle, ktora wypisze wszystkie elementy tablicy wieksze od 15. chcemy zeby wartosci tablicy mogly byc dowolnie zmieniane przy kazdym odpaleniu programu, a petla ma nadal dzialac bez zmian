@@ -1,0 +1,12 @@
+//2. zadeklaruj tablice int[] values = {10,20,30,5,10,15}, a nastepnie napisz petle, ktora wypisze wszystkie elementy tablicy wieksze od 15.
+// chcemy zeby wartosci tablicy mogly byc dowolnie zmieniane przy kazdym odpaleniu programu, a petla ma nadal dzialac bez zmian
+
+public class Zadanie {
+    public static void main(String[] args) {
+        int [] values = {10,20,30,5,10,15};
+        for (int i=0; i<values.length; i++){
+            if (values[i]>15)
+                System.out.println(values[i]);
+        }
+    }
+}
