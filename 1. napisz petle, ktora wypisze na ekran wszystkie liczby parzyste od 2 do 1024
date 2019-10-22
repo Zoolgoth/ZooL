@@ -1,4 +1,6 @@
 //1. napisz petle, ktora wypisze na ekran wszystkie liczby parzyste od 2 do 1024
+
+
 public class testttttttttttttttttt {
 ​
     public static void main(String[] args) {
