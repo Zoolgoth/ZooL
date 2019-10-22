@@ -1,0 +1,18 @@
+// 4. zadeklaruj tablice String[] text = {"napis1", "napis2", "abcd"}, a nastepnie napisz petle, ktora zsumuje ilosc liter 
+// wszystkich napiow w tablicy. chcemy zeby wartosci tablicy mogly byc dowolnie zmieniane przy kazdym odpaleniu programu, 
+// a petla ma nadal dzialac bez zmian. Przykladowo, dla podanej tablicy {"napis1", "napis2", "napis3"} 
+// chcemy zeby wynikiem bylo 6+6+4=16. ilosc znakow w danym napisie dostaniesz po napisaniu text[indeks].length()
+
+public class Homework {
+    public static void main(String[] args) {
+        String [] text = {"napis1", "napis2", "abcd"};
+        int suma = 0;
+        for (int i = 0; i<text.length; i++){
+            int wynik = text[i].length();
+            //System.out.println(wynik);
+            suma = suma+wynik;
+            System.out.println(wynik +"+");}
+        int ok = suma;
+        System.out.println("=" + ok);
+        }
+    }
