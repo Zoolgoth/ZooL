@@ -1,0 +1,23 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class RandomGuesser {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int randomNumber;
+        Random r = new Random();
+        randomNumber = (int)(r.nextDouble()*9)+1;
+        int guessNumber;
+        int nrOfGuesses =0;
+        do{
+            System.out.println("Podaj nr od 1-10: ");
+            guessNumber=scanner.nextInt();
+            System.out.println();
+            nrOfGuesses++;
+        }while (guessNumber != randomNumber);
+
+        System.out.println("gz zgadłeś nr za " + nrOfGuesses + " razem");
+        scanner.close();
+    }
+}
