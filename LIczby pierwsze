@@ -1,0 +1,25 @@
+import java.math.BigInteger;
+
+public class LiczbyPierwszeDziala {
+    public static void main(String[] args) {
+        BigInteger bi1, bi2, bi3;
+        Boolean b1, b2, b3;
+
+        bi1 = new BigInteger("2");
+        bi2 = new BigInteger("4");
+        bi3 = new BigInteger("6");
+
+        b1 = bi1.isProbablePrime(1);
+        b2 = bi2.isProbablePrime(1);
+        b3 = bi3.isProbablePrime(1);
+
+        String str1 = bi1+ " is prime with certainity 1 is " +b1;
+        String str2 = bi2+ " is prime with certainity 1 is " +b2;
+        String str3 = bi3+ " is prime with certainity -1 is " +b3;
+
+        // print b1, b2, b3 values
+        System.out.println( str1 );
+        System.out.println( str2 );
+        System.out.println( str3 );
+    }
+}
