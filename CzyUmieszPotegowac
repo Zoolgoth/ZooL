@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class CzyUmieszPotęgować {
+    public static void main(String[] args) {
+    int a;
+    int b;
+
+        System.out.println("Podaj prosze liczbę: ");
+        Scanner scanera = new Scanner(System.in);
+        a = scanera.nextInt();
+        System.out.println("Podaj prosze druga liczbę: ");
+        Scanner scanerb = new Scanner(System.in);
+        b = scanerb.nextInt();
+        double wynik = Math.pow(a, b);
+        System.out.println(a + " do potegi " +b + "= " + wynik);
+
+    }
+}
