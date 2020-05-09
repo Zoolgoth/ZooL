@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class Flamaster {
+
+    public static void sprawdz(String wyraz) {
+
+        if (wyraz.length()<3) {
+            System.out.println(wyraz);
+        }
+        else {
+            StringBuilder builder = new StringBuilder();
+            for (int i=0; i<wyraz.length(); i++){
+                char a = wyraz.charAt(i);
+                builder.append(a);
+
+                int count = 1;
+                if (i == wyraz.length() - 1) {
+                    break;
+                }
+                while (a == wyraz.charAt(i + 1)) {
+                    count++;
+                    i++;
+
+                    if (i == wyraz.length() - 1) {
+                        break;
+                    }
+                }
+                if (count == 2) {
+                    builder.append(a);
+                } else if (count > 2) {
+                    builder.append(count);
+                }
+                if (i == wyraz.length() - 2) {
+                    builder.append(wyraz.charAt(i + 1));
+                }
+            }
+            System.out.println(builder.toString());
+        }
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Podaj jakis wyraz");
+        Scanner scanner = new Scanner(System.in);
+        int cases = scanner.nextInt();
+
+        for (int j = 0; j < cases; j++) {
+            String kasiaWord = scanner.next();
+            sprawdz(kasiaWord);
+        }
+    }
+}
