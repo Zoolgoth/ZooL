@@ -1,0 +1,11 @@
+public class IntToString {
+    public static void main(String[] args) {
+        int liczba = 123;
+        String podanaLiczba = String.valueOf(liczba);
+        System.out.println(podanaLiczba + " metoda 1");
+
+        String test = Integer.toString(liczba);
+        System.out.println(test +" metoda 2");
+
+    }
+}
