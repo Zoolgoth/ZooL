@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class ZadaniePróbne {
+    public static void main(String[] args) {
+
+        int a;
+        int b;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbe która chcesz dodać:");
+        a = scanner.nextInt();
+        System.out.println("Podaj druga liczbe która chcesz dodać:");
+        b = scanner.nextInt();
+        System.out.println(a+b);
+    }
+}
