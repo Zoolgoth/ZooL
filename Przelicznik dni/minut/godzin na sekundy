@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class PrzelicznikSekund {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        //How many seconds are in 1d 6h 42min 11s  =  110531seconds
+        int days =0, hours=0, minutes=0, seconds=0, total=0;
+
+
+        System.out.println("Say how many days :");
+        days = scanner.nextInt();
+
+        System.out.println("Say how many hours :");
+        hours = scanner.nextInt();
+
+        System.out.println("Say how many minutes :");
+        minutes = scanner.nextInt();
+
+        System.out.println("Say how many seconds :");
+        seconds = scanner.nextInt();
+
+        System.out.println(days*86400 + hours*3600 + minutes*60 + seconds + " seconds");
+    }
+}
