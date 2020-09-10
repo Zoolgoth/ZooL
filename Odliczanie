@@ -1,0 +1,18 @@
+public class Counting {
+    public static void main(String[] args) {
+
+        long current = System.currentTimeMillis();
+        int i = 0;
+        while (i <= 100) {
+            if (System.currentTimeMillis() - current > 1000) {
+                System.out.println(i++);
+                current = System.currentTimeMillis();
+            }
+        }
+        System.out.println("The end");
+
+    }
+}
+
+
+//Odliczanie do 100
