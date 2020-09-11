@@ -1,0 +1,18 @@
+public class Testowanie {
+
+    public static void walk() {
+        for (int i=0; i<500000; i++) {
+            System.out.println(i);
+        }
+    }
+    public static void main(String[] args) {
+
+        long startTime = System.nanoTime();
+        walk();
+        long stopTime = System.nanoTime();
+        long elapsedTime = stopTime-startTime;
+        System.out.println(elapsedTime/1000000000);
+        
+        //1 sec = 1 000 000 000 nanoTime
+    }
+}
